@@ -2,5 +2,5 @@
 
 Test
 
-Bild:
-/images/Startseite.png
+
+![Startseite]/images/Startseite.png
