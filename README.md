@@ -36,7 +36,7 @@
 
 ![This is an image](/images/Rest_transport_config_de.png)
 
-### 2.2.3 CMDB Klassen für den Sync
+#### 2.2.3 CMDB Klassen für den Sync
 
 - In der Anlage haben wir zwei Beispiel für den Aufbau von OTRS CMDB Klassen.
 
@@ -53,3 +53,27 @@
 #### 2.4.1 Startseite 
 
 - Die Startseite gibt einen Überblick über die getroffenen Einstellungen für die Synchronisation und die Verbindung zum Webservice von OTRS. Außerdem kann man sehen wann die letzte erfolgreiche Synchronisation mit OTRS stattgefunden hat und ob die Möglichkeit besteht Emails zu versenden. Bei der Email Konfiguration wird zum einen überprüft , ob ein Email Server in i-doit konfiguriert ist und zum Anderen ob im Connector Email Adressen für die Benachrichtigung eintragen wurden.
+
+![This is an image](/images/Startseite.png)
+
+#### 2.4.2 Einstellungen
+
+- Als erstes sollte die Einstellungsseite geöffnet und der **Lizenzschlüssel aktiviert** werden, danach sollten die entsprechenden Einträge für die Verbindung zu OTRS, die Synchronisation, die Änderungshistorie und die Benachrichtigungen gesetzt werden.
+- Unter dem Punkt **Verbindung** werden die Angaben zum Webservice von OTRS getroffen. Hier werden die URL zum OTRS-System, der Name des Webservices (der in OTRS angelegt wurde in unserem Webservice zum Import ist dies **IdoitSync**), die Aktionen für das Suchen, Aktualisieren und Anlegen von CI's (werden die Aktionen leer gelassen, wird automatisch der it-novum default SearchCI, CreateCI und UpdateCI genommen), der Benutzername und das Passwort eingetragen. Anschließend kann man über den Button "Verbindung überprüfen" testen, ob die Verbindung zum OTRS-System ordnungsgemäß funktioniert.
+- Unter dem Punkt **Automatische Synchronisation** werden die zeitlichen Intervalle für die Synchronisation festgelegt. Zuerst muss man einen Haken setzen und danach das gewünschte Intervall auswählen. Es stehen die Möglichkeiten alle 10 Minuten, alle 15 Minuten, alle 30 Minuten, jede Stunde und jeden Tag zur Auswahl.
+- Der Punkt **Changelog** bietet die Möglichkeit zu entscheiden wie lange man die Änderungshistorie aufheben möchte. Hier hat man die Wahl zwischen für einen Tag, für eine Woche, für einen Monat, für ein Jahr oder für immer.
+- Unter dem Punkt **Email Benachrichtigungen** kann man E-Mail Adressen hinterlegen, die eine Benachrichtigung erhalten wenn ein Fehler auftritt. Es können mehrere E-Mail Adressen getrennt durch ein Semikolon hinterlegt werden.
+- Abschließend alle Einstellungen speichern. Um zu überprüfen, ob die E-Mail Konfiguration funktioniert, kann man über den Button <Testmail senden> eine E-Mail an die eingetragenen E-Mail Adressen senden.
+- Außerdem kann man über den Button <Kompatibilitätscheck> überprüfen, ob alle Tabellen, Spalten und Konstanten, die vom Konnektor verwendet werden, in i-doit noch vorhanden sind.
+
+![This is an image](/images/manual_settings.png)
+
+
+
+
+
+
+
+
+
+
