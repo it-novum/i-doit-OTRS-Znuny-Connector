@@ -1,3 +1,3 @@
-# i-doit-OTRS-Znuny---Connector
+# i-doit / OTRS / Znuny - Connector
 
 Test
