@@ -16,3 +16,9 @@ __2 Installation und Konfiguration__
 	- die Klassenstrukturen müssen aus OTRS nach i-doit kopiert und bei Änderungen im Connector oder OTRS immer manuell synchron gehalten werden.
 
 - WICHTIG Namen und die Operationen müssen exakt so im Connector in i-doit unter den Einstellungen eingetragen sein.
+
+2.2 Webservices
+
+2.2.1 Importieren des Webservices
+
+- Im Lieferumfang der Schnittstelle sollte eine Datei (IdoitSync.yml)beinhaltet sein. Diese kann über den Adminbereich -> Webservices importiert werden. Damit der Webservice ohne Probleme funktioniert, muss zuvor das ITSM Paket installiert sein.
