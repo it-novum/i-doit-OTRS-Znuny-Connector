@@ -22,3 +22,14 @@
 #### 2.2.1 Importieren des Webservices
 
 - Im Lieferumfang der Schnittstelle sollte eine Datei (IdoitSync.yml)beinhaltet sein. Diese kann über den Adminbereich -> Webservices importiert werden. Damit der Webservice ohne Probleme funktioniert, muss zuvor das ITSM Paket installiert sein.
+
+#### 2.2.2 Manuelles anlegen des Webservices
+- Im nachfolgenden Bild kann man sehen wie ein Webservice in OTRS aussehen muss.
+
+![This is an image](/images/OTRS_Webservice_Uebersicht.png)
+
+- Die einzelnen Operationen sollten wie folgt aussehen. Weitere Einstellungen müssen nicht vorgenommen werden.
+
+![This is an image](/images/OTRS_Webservice_Operation.png)
+
+- Darüber hinaus müssen noch folgende Einstellungen in den Netzwerk Transport Einstellungen für "HTTP::REST" getroffen werden. Dafür klickt man auf den Button "Configure" neben dem Eintrag "Network Transport HTTP::REST" und füllt die Felder wie in der nachfolgenden Abbildung aus.
