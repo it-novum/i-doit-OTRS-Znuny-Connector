@@ -23,7 +23,7 @@
 
 - Im Lieferumfang der Schnittstelle sollte eine Datei (IdoitSync.yml)beinhaltet sein. Diese kann über den Adminbereich -> Webservices importiert werden. Damit der Webservice ohne Probleme funktioniert, muss zuvor das ITSM Paket installiert sein.
 
-#### 2.2.2 Manuelles anlegen des Webservices
+#### 2.2.2 Alternativ - Manuelles anlegen des Webservices
 - Im nachfolgenden Bild kann man sehen wie ein Webservice in OTRS aussehen muss.
 
 ![This is an image](/images/OTRS_Webservice_Uebersicht.png)
@@ -33,3 +33,23 @@
 ![This is an image](/images/OTRS_Webservice_Operation.png)
 
 - Darüber hinaus müssen noch folgende Einstellungen in den Netzwerk Transport Einstellungen für "HTTP::REST" getroffen werden. Dafür klickt man auf den Button "Configure" neben dem Eintrag "Network Transport HTTP::REST" und füllt die Felder wie in der nachfolgenden Abbildung aus.
+
+![This is an image](/images/Rest_transport_config_de.png)
+
+### 2.2.3 CMDB Klassen für den Sync
+
+- In der Anlage haben wir zwei Beispiel für den Aufbau von OTRS CMDB Klassen.
+
+### 2.3 User für die Synchronisation
+
+- Für den sync von i-doit nach OTRS wird noch ein User auf der OTRS Seite benötigt. Dieser User braucht die kompletten Rechte für die Gruppe „itsm-configitem“ Der User sollte aus Sicherheitsgründen nicht der "root" Benutzer sein, ist aber grundsätzlich möglich. Des weiteren ist es sinnvoll, allen anderen Usern in OTRS auf die CMDB nur Lese-Rechte zu vergeben, da i-doit als führendes System genutzt wird und die Werte nicht in OTRS gepflegt werden sollen.
+
+### 2.4 i-doit Installation & Konfiguration
+
+- Der i-doit / OTRS Connector wird wie jedes andere Modul über das Admin Center installiert.
+- Nach der Installation müssen noch die entsprechenden Rechte für das otrssync Modul gesetzt werden, damit man Zugriff auf den Connector im i-doit Frontend bekommt. Ist dies geschehen, steht der Connector unter dem Menüpunkt „Extras“ zur Verfügung
+- Nach der Installation in i-doit steht der Connector unter dem Menüpunkt "Extras" zur Verfügung.
+
+#### 2.4.1 Startseite 
+
+- Die Startseite gibt einen Überblick über die getroffenen Einstellungen für die Synchronisation und die Verbindung zum Webservice von OTRS. Außerdem kann man sehen wann die letzte erfolgreiche Synchronisation mit OTRS stattgefunden hat und ob die Möglichkeit besteht Emails zu versenden. Bei der Email Konfiguration wird zum einen überprüft , ob ein Email Server in i-doit konfiguriert ist und zum Anderen ob im Connector Email Adressen für die Benachrichtigung eintragen wurden.
