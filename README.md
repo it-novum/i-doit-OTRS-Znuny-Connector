@@ -75,7 +75,9 @@
 
 ![This is an image](/images/manuelle_einstellungen.png)
 
+- Unter dem Abschnitt "Alle Einstellungen sichern" kann man vor dem Update auf eine neuere Version oder aus anderen Gründen ein Backup aller Einstellungen erstellen. Die Backups sind über das Auswahlfeld auswählbar und können nach Auswahl wieder hergestellt oder gelöscht werden. Die Backupdateien werden auf dem Server im Datei Upload Ordner (z.B. /var/www/html/i-doit/upload/files/) abgelegt.
 
+![This is an image](/images/manual_backup.png)
 
 
 
