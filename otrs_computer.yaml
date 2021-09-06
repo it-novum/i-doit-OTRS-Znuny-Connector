@@ -1,0 +1,78 @@
+---
+- Key: Bezeichnung
+  Name: Bezeichnung
+  Searchable: 1
+  Input:
+    MaxLength: 1000
+    Size: 50
+    Type: Text
+
+- Key: Link-idoit
+  Name: Link-idoit
+  Searchable: 1
+  Input:
+    MaxLength: 1000
+    Size: 50
+    Type: Text
+
+- Key: E-Mail-Adresse
+  Name: E-Mail-Adresse
+  Searchable: 1
+  Input:
+    MaxLength: 1000
+    Size: 50
+    Type: Text
+
+- Key: BesitzerName
+  Name: BesitzerName
+  Searchable: 1
+  Input:
+    MaxLength: 1000
+    Size: 50
+    Type: Text
+
+- Key: SerialNumber
+  Name: SerialNumber
+  Searchable: 1
+  Input:
+    MaxLength: 100
+    Size: 50
+    Type: Text
+
+- Key: Betriebssystem
+  Name: Betriebssystem
+  Searchable: 1
+  Input:
+    MaxLength: 100
+    Size: 50
+    Type: Text
+
+- Key: Hostname
+  Name: Bezeichnung Hostname
+  Searchable: 1
+  Input:
+    MaxLength: 100
+    Size: 50
+    Type: Text
+
+- Key: IP-Adresse-primary
+  Name: IP-Adresse (primary)
+  Input:
+    MaxLength: 100
+    Size: 50
+    Type: Text
+
+- Key: DHCP
+  Name: DHCP
+  Input:
+    MaxLength: 100
+    Size: 50
+    Type: Text
+	  
+- Key: Standort
+  Name: Standort
+  Searchable: 1
+  Input:
+    MaxLength: 1000
+    Size: 50
+    Type: Textarea

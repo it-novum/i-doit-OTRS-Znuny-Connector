@@ -125,7 +125,7 @@
 - Schritt 3 dient dazu die Attribute aus i-doit den Attributen aus OTRS zuzuordnen. Dabei werden pro Objekttyp nur die darin verfügbaren Kategorien angezeigt. Die Zuordnung muss für jeden ausgewählten Objekttyp durchgeführt werden. Dazu klickt man auf das jeweilige Objekt und es öffnet sich eine Box mit den verfügbaren Attributen. Man muss nicht alle Attribute aus i-doit zuordnen, sondern kann auch "No Sync" auswählen um nur die gewünschten Attribute aus i-doit nach OTRS zu übertragen.
 - **HINWEIS:** Vermisst man bei der Zuordnung Attribute auf der i-doit Seite, liegt dies daran, dass der Algorithmus im Hintergrund die Attribute nicht vollständig auflösen konnte. Abhilfe schafft hier die manuelle Erweiterung der entsprechenden Tabelle.
 - Ist die Zuordnung abgeschlossen klickt man auf <Speichern> oder auf den Button <Zurück zu Schritt 2> um die Zuordnung zu verwerfen.
-- Nach dem Speichern kann man über den Button **<Quick Sync>** das erstellte Mapping anwenden und die Objekte aus i-doit nach OTRS synchronisieren. Ist das Objekt in OTRS bereits vorhanden wird es aktualisiert. Nimmt man in der Zuordnung keine Änderungen vor, kann man jederzeit die Synchronisation über diesen Button von Hand anstoßen.
+- Nach dem Speichern kann man über den Button <Quick Sync> das erstellte Mapping anwenden und die Objekte aus i-doit nach OTRS synchronisieren. Ist das Objekt in OTRS bereits vorhanden wird es aktualisiert. Nimmt man in der Zuordnung keine Änderungen vor, kann man jederzeit die Synchronisation über diesen Button von Hand anstoßen.
 - Bevor die Synchronisation ausgeführt wird, prüft die Schnittstelle für jedes zu synchronisierende Objekt, ob seit der letzten Synchronisation etwas verändert wurde und ob eine Synchronisation überhaupt notwendig ist. Es werden somit nur Objekte synchronisiert, die tatsächlich verändert wurden. Dies hält die zu übertragende Datenmenge so gering wie möglich
 - **HINWEIS:** Wird ein Objekt in i-doit gelöscht oder archiviert, wird es in OTRS auf "inactive" gesetzt, da in OTRS das Löschen von Objekten nicht möglich ist.
 
@@ -142,9 +142,22 @@
 
 - In OTRS sieht man nach der Synchronisation von i-doit im Overview alle übertragenen Objekte. Nachfolgend kann man sehen wie dies für die übertragenen Computer in OTRS aussehen würde. Unter "Last Changed" kann man auch genau erkennen wann die Objekte zuletzt synchronisiert wurden.
 
+![This is an image](/images/OTRS_Overview_.png)
 
+- In der Detailansicht kann man alle Werte zu einem Objekt sehen, die von i-doit übertragen wurden. Anhand der Versionsnummer kann man sehen wie oft die Werte geändert wurden. Außerdem ist erkennbar welcher Benutzer das Objekt angelegt hat. Hier steht der Benutzer, welcher in i-doit für die Verbindung mit dem Webservice benutzt wird.
 
+- BILD FEHLT NOCH
 
+- In der History kann man genau nachvollziehen welche Änderungen wann und durch wenn durchgeführt wurden. Das bedeutet jede Änderung, die durch eine Synchronisation ausgelöst wurde, wird hier genau protokolliert.
 
+- BILD FEHLT NOCH
 
+## 3 Anlagen
 
+### 3.1 OTRS Computer Klassendefinition 
+
+- otrs_computer.yaml
+
+### 3.1 OTRS Monitor Klassendefinition 
+
+- otrs_monitor.yaml
