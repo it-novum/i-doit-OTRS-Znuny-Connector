@@ -80,6 +80,39 @@
 ![This is an image](/images/manual_backup.png)
 
 
+### 2.4.3 Import OTRS Klassen
+
+- Über den Menüpunkt "Import" kopiert man die angelegten Klassenstrukturen, im YAML Format, mit den dazugehörigen Attributen aus OTRS in den Connector. Defaultmässig werden hier die Standard Strukturen aus OTRS mitgeliefert. Werden die Klassendefinitionen in OTRS geändert oder neu angelegt, können diese per Copy & Paste hier eingefügt werden.
+- Der Klassenname steht, nach dem Speichern der Struktur, im Schritt 1 für das Mapping der Objekttypen zur Verfügung. Nach dem Speichern einer Struktur werden auf der rechten Seite die verfügbaren Attribute angezeigt. Diese Attribute stehen im Schritt 3 für das Mapping der Attribute bereit.
+- Beispiele für Computer und Monitore sind als Textdokument vorhanden. (computer.yaml und monitor.yaml)
+
+![This is an image](/images/manual_import.png)
+
+- Unter dem Punkt "Deployment States OTRS" muss man festlegen, welche Kombination aus CMDB Status und Einsatzzweck einen OTRS Deployment Status ergeben.
+- Mit der Wahl des Eintrags "Alle / Rest" kann ein Wildcard gesetzt werden. Ein Beispiel: die Kombination Einsatzzweck "Produktion" und CMDB Status "Alle / Rest" führt dazu, dass alle Objekte mit dem Einsatzzweck "Produktion", die nicht mit einem CMDB Status verknüpft wurden, den Deployment Status "Production" erhalten. Der Einsatzzweck CMDB Status Kombination der Objekte, so wie sie in der Liste aufgeführt ist bedeutet für die Reihenfolge des Matchings in diesem Beispiel das zuerst die Kombination "Test" und "In Betrieb" gemapped wird, danach "Qualitätssicherung" und "Alle / Rest" und so weiter. Die niedrigste Priorität hat immer die Kombination "Alle / Rest" und "Alle / Rest".
+- Allgemein kann man sagen, dass als erstes ein ausgefüllter Einsatzzweck und CMDB Status ausgewertet wird, danach die Kombination aus ausgefülltem Einsatzzweck und "Alle / Rest" für den CMDB Status,anschließend die Kombination "Alle / Rest" für Einsatzzweck und ausgefüllter CMDB Status und zum Schluss die Kombination "Alle / Rest" für Einsatzzweck und CMDB Status.
+
+![This is an image](/images/manual_depl_states.png)
+
+- Unter dem Abschnitt "Black list Deployment States" kann man eine Kombination von Einsatzzweck und CMBD Status auswählen, die dann bei der Synchronisation ignoriert werden sollen. Das bedeutet, wenn ein Objekt den Status Einsatzzweck "Test" hat wird es nicht synchronisiert, da als zweiter Parameter "Alle/Rest" ausgewählt wurde. Hat man ein Deployment State Mapping erstellt und fügt diese Kombination auch in die Blacklist ein, werden Objekte mit dieser Kombination nicht synchronisiert.
+
+![This is an image](/images/manual_blacklist.png)
+
+- Im Abschnitt "Map Archived / Deleted to Deployment State" kann man festlegen auf welchen Status CI's in OTRS gesetzt werden sollen, die in idoit auf archiviert oder gelöscht gesetzt wurden. Wählt der Anwender hier nichts aus, werden alle CI's, die Gelöscht oder Archiviert wurden in OTRS auf den Status "Inactive" gesetzt.
+
+![This is an image](/images/manual_map_archieved_deleted.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

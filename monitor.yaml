@@ -1,0 +1,38 @@
+- Key: Bezeichnung
+  Name: Bezeichnung
+  Searchable: 1
+  Input:
+    Type: Text
+    Size: 50
+    MaxLength: 50
+
+- Key: BesitzerName
+  Name: BesitzerName
+  Searchable: 1
+  Input:
+    Type: Text
+    Size: 100
+    MaxLength: 100
+
+- Key: Hersteller
+  Name: Hersteller
+  Input:
+    Type: Text
+    Size: 50
+    MaxLength: 100
+
+- Key: SerialNumber
+  Name: Serial Number
+  Searchable: 1
+  Input:
+    Type: Text
+    Size: 50
+    MaxLength: 100
+
+- Key: Link-idoit
+  Name: Link-idoit
+  Searchable: 1
+  Input:
+    Type: Text
+    Size: 550
+    MaxLength: 550
