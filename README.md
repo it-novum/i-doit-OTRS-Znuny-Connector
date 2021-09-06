@@ -24,6 +24,7 @@
 - Im Lieferumfang der Schnittstelle sollte eine Datei (IdoitSync.yml)beinhaltet sein. Diese kann über den Adminbereich -> Webservices importiert werden. Damit der Webservice ohne Probleme funktioniert, muss zuvor das ITSM Paket installiert sein.
 
 #### 2.2.2 Alternativ - Manuelles anlegen des Webservices
+
 - Im nachfolgenden Bild kann man sehen wie ein Webservice in OTRS aussehen muss.
 
 ![This is an image](/images/OTRS_Webservice_Uebersicht.png)
@@ -80,7 +81,7 @@
 ![This is an image](/images/manual_backup.png)
 
 
-### 2.4.3 Import OTRS Klassen
+#### 2.4.3 Import OTRS Klassen
 
 - Über den Menüpunkt "Import" kopiert man die angelegten Klassenstrukturen, im YAML Format, mit den dazugehörigen Attributen aus OTRS in den Connector. Defaultmässig werden hier die Standard Strukturen aus OTRS mitgeliefert. Werden die Klassendefinitionen in OTRS geändert oder neu angelegt, können diese per Copy & Paste hier eingefügt werden.
 - Der Klassenname steht, nach dem Speichern der Struktur, im Schritt 1 für das Mapping der Objekttypen zur Verfügung. Nach dem Speichern einer Struktur werden auf der rechten Seite die verfügbaren Attribute angezeigt. Diese Attribute stehen im Schritt 3 für das Mapping der Attribute bereit.
@@ -102,17 +103,34 @@
 
 ![This is an image](/images/manual_map_archieved_deleted.png)
 
+#### 2.4.4 Mapping Schritt 1: Objekttypen
 
+- Ab Schritt 1 erfolgt die Zuordnung beginnend mit den Objekttypen. Dabei werden auf der linken Seite alle in i-doit verfügbaren Objekttypen angezeigt. Auf der rechten Seite kann man aus der Drop-Down-Box die zur Verfügung stehen OTRS Klassen auswählen.
+- Dabei legt man als erstes fest welche Objekttypen auf welche Klassen abgebildet werden sollen. Dabei müssen nicht alle i-doit Objekttypen, den OTRS Klassen zuordnet werden, sondern man kann auch "No Sync" auswählen, um Objekttypen von der Synchronisation auszuschließen.
+- Da die Auswahl für i-doit Objekte sehr lang und unübersichtlich sein kann, lässt sich durch Eingabe des i-doit Objektnamens die Anzeige filtern.
+- Ist man fertig mit der Zuordnung klickt man am Seitenende auf den Button "Weiter zu Schritt 2", um das Mapping zu speichern.
 
+![This is an image](/images/manual_step_1.png)
 
+#### 2.4.5 Mapping Schritt 2: Kategorien
 
+- In Schritt 2 wählt man die Kategorien, die für die Synchronisation verwendet werden. Durch eine Vorauswahl der Kategorien schränkt man auch gleich die Auswahl der zur Verfügung stehenden Attribute ein.
+- Im Default werden die Kategorien Allgemein, Kontaktzuweisung, Modell, Hostadresse, Standort, Servicezuweisung und Betriebssystem zur Auswahl angeboten. Alternativ lassen sich über den Button <Show All / Alles anzeigen> alle zur Verfügung stehenden Kategorien anzeigen und die Auswahl erweitern oder komplett ändern.15
+- Ist man mit der Auswahl der Kategorien fertig, klickt man entweder auf den Button <Weiter zu Schritt 3> um zu speichern oder auf den Button <Zurück zu Schritt 1>, um die Auswahl zu verwerfen.
 
+![This is an image](/images/manual_step_2.png)
 
+#### 2.4.6 Mapping Schritt 3: Attribute
 
+- Schritt 3 dient dazu die Attribute aus i-doit den Attributen aus OTRS zuzuordnen. Dabei werden pro Objekttyp nur die darin verfügbaren Kategorien angezeigt. Die Zuordnung muss für jeden ausgewählten Objekttyp durchgeführt werden. Dazu klickt man auf das jeweilige Objekt und es öffnet sich eine Box mit den verfügbaren Attributen. Man muss nicht alle Attribute aus i-doit zuordnen, sondern kann auch "No Sync" auswählen um nur die gewünschten Attribute aus i-doit nach OTRS zu übertragen.
+- **HINWEIS:** Vermisst man bei der Zuordnung Attribute auf der i-doit Seite, liegt dies daran, dass der Algorithmus im Hintergrund die Attribute nicht vollständig auflösen konnte. Abhilfe schafft hier die manuelle Erweiterung der entsprechenden Tabelle.
+- Ist die Zuordnung abgeschlossen klickt man auf <Speichern> oder auf den Button <Zurück zu Schritt 2> um die Zuordnung zu verwerfen.
+- Nach dem Speichern kann man über den Button <Quick Sync> das erstellte Mapping anwenden und die Objekte aus i-doit nach OTRS synchronisieren. Ist das Objekt in OTRS bereits vorhanden wird es aktualisiert. Nimmt man in der Zuordnung keine Änderungen vor, kann man jederzeit die Synchronisation über diesen Button von Hand anstoßen.
+- Bevor die Synchronisation ausgeführt wird, prüft die Schnittstelle für jedes zu synchronisierende Objekt, ob seit der letzten Synchronisation etwas verändert wurde und ob eine Synchronisation überhaupt notwendig ist. Es werden somit nur Objekte synchronisiert, die tatsächlich verändert wurden. Dies hält die zu übertragende Datenmenge so gering wie möglich
+- **HINWEIS:** Wird ein Objekt in i-doit gelöscht oder archiviert, wird es in OTRS auf "inactive" gesetzt, da in OTRS das Löschen von Objekten nicht möglich ist.
 
-
-
-
+![This is an image](/images/manual_step_3_1.png)
+![This is an image](/images/manual_step_3_2.png)
 
 
 
