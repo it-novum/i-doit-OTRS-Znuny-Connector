@@ -48,6 +48,9 @@
 ### 2.4 i-doit Installation & Konfiguration
 
 - Der i-doit / OTRS Connector wird wie jedes andere Modul über das Admin Center installiert.
+
+```otrssync-1.9.2.zip```
+
 - Nach der Installation müssen noch die entsprechenden Rechte für das otrssync Modul gesetzt werden, damit man Zugriff auf den Connector im i-doit Frontend bekommt. Ist dies geschehen, steht der Connector unter dem Menüpunkt „Extras“ zur Verfügung
 
 ![This is an image](/images/Rechtevergabe.png)
