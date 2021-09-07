@@ -12,7 +12,7 @@
 * [3 Anlagen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#3-anlagen)
 * [3.1 OTRS Computer Klassendefinition](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-computer-klassendefinition)
 * [3.2 OTRS Monitor Klassendefinition ](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-monitor-klassendefinition)
-* [4. Update von Connector Version 1.8.x auf 1.9.x](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#Update-von-Connector-Version-1.8.x-auf-1.9.x)
+* [4. Update von Connector Version 1.8.x auf 1.9.x](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#4-update-von-connector-version-18x-auf-19x)
 
 ## 1. Allgemeine Informationen 
 
