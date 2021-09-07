@@ -1,5 +1,9 @@
 # i-doit / OTRS / Znuny - Connector
 
+## Inhaltsverzeichnis
+- 
+	* [Allgemeine Informationen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#1-allgemeine-informationen)
+
 ## 1. Allgemeine Informationen 
 
 - Der von it-novum entwickelte Connector ermöglicht Config Items von i-doit nach OTRS zu synchronisieren. Dabei besteht die Möglichkeit genau festzulegen welche Objekttypen, Kategorien und Attribute von i-doit nach OTRS übertragen werden und auf welche Objekttypen und Attribute sie dort abgebildet werden sollen.
