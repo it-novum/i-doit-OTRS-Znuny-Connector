@@ -1,0 +1,62 @@
+---
+Debugger:
+  DebugThreshold: debug
+  TestMode: '0'
+Description: ''
+FrameworkVersion: 5.0.11
+Provider:
+  Operation:
+    CreateCI:
+      Description: ''
+      MappingInbound:
+        Type: Simple
+      MappingOutbound:
+        Type: Simple
+      Type: ConfigItem::ConfigItemCreate
+    GetCI:
+      Description: ''
+      MappingInbound:
+        Type: Simple
+      MappingOutbound:
+        Type: Simple
+      Type: ConfigItem::ConfigItemGet
+    SearchCI:
+      Description: ''
+      MappingInbound:
+        Type: Simple
+      MappingOutbound:
+        Type: Simple
+      Type: ConfigItem::ConfigItemSearch
+    UpdateCI:
+      Description: ''
+      MappingInbound:
+        Type: Simple
+      MappingOutbound:
+        Type: Simple
+      Type: ConfigItem::ConfigItemUpdate
+  Transport:
+    Config:
+      KeepAlive: ''
+      MaxLength: '1000000000'
+      RouteOperationMapping:
+        CreateCI:
+          RequestMethod:
+          - POST
+          Route: /CreateCI/:UserLogin/:Password
+        GetCI:
+          RequestMethod:
+          - POST
+          Route: /GetCI/:UserLogin/:Password
+        SearchCI:
+          RequestMethod:
+          - POST
+          Route: /SearchCI/:UserLogin/:Password
+        UpdateCI:
+          RequestMethod:
+          - POST
+          Route: /UpdateCI/:UserLogin/:Password
+    Type: HTTP::REST
+RemoteSystem: ''
+Requester:
+  Transport:
+    Type: ''
