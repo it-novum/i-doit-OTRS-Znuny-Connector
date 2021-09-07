@@ -75,4 +75,4 @@
   Input:
     MaxLength: 1000
     Size: 50
-    Type: Textarea
+    Type: Text
