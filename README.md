@@ -142,15 +142,15 @@
 
 - In OTRS sieht man nach der Synchronisation von i-doit im Overview alle übertragenen Objekte. Nachfolgend kann man sehen wie dies für die übertragenen Computer in OTRS aussehen würde. Unter "Last Changed" kann man auch genau erkennen wann die Objekte zuletzt synchronisiert wurden.
 
-![This is an image](/images/OTRS_Overview_.png)
+![This is an image](/images/OTRS_Overview.png)
 
 - In der Detailansicht kann man alle Werte zu einem Objekt sehen, die von i-doit übertragen wurden. Anhand der Versionsnummer kann man sehen wie oft die Werte geändert wurden. Außerdem ist erkennbar welcher Benutzer das Objekt angelegt hat. Hier steht der Benutzer, welcher in i-doit für die Verbindung mit dem Webservice benutzt wird.
 
-- BILD FEHLT NOCH
+![This is an image](/images/OTRS_Computer_View.png)
 
 - In der History kann man genau nachvollziehen welche Änderungen wann und durch wenn durchgeführt wurden. Das bedeutet jede Änderung, die durch eine Synchronisation ausgelöst wurde, wird hier genau protokolliert.
 
-- BILD FEHLT NOCH
+![This is an image](/images/OTRS_History.png)
 
 ## 3 Anlagen
 
