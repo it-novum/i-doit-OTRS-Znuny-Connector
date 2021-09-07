@@ -160,4 +160,5 @@
 
 ### 3.1 OTRS Monitor Klassendefinition 
 
-- otrs_monitor.yaml (https://github.com/it-novum/i-doit-OTRS-Znuny-Connector/blob/main/otrs_monitor.yaml)
+```otrs_monitor.yaml```
+
