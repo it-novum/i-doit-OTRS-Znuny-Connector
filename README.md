@@ -156,7 +156,7 @@
 
 ### 3.1 OTRS Computer Klassendefinition 
 
-- otrs_computer.yaml (https://github.com/it-novum/i-doit-OTRS-Znuny-Connector/blob/main/otrs_computer.yaml)
+```otrs_computer.yaml```
 
 ### 3.1 OTRS Monitor Klassendefinition 
 
