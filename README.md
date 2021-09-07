@@ -1,8 +1,18 @@
 # i-doit / OTRS / Znuny - Connector
 
 ## Inhaltsverzeichnis
-- 
-	* [Allgemeine Informationen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#1-allgemeine-informationen)
+
+* [1. Allgemeine Informationen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#1-allgemeine-informationen)
+* [2. Installation und Konfiguration](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#2-installation-und-konfiguration)
+* [2.1 OTRS Installation & Konfiguration](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#21-otrs-installation--konfiguration)
+* [2.2 Webservices](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#22-webservices)
+* [2.3 User für die Synchronisation](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#23-user-fu%CC%88r-die-synchronisation)
+* [2.4 i-doit Installation & Konfiguration](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#24-i-doit-installation--konfiguration)
+* [2.5 Prüfen des Syncs auf OTRS Seite](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#25-pru%CC%88fen-des-syncs-auf-otrs-seite)
+* [3 Anlagen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#3-anlagen)
+* [3.1 OTRS Computer Klassendefinition](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-computer-klassendefinition)
+* [3.2 OTRS Monitor Klassendefinition ](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-monitor-klassendefinition)
+* [4. Update von Connector Version 1.8.x auf 1.9.x](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#Update-von-Connector-Version-1.8.x-auf-1.9.x)
 
 ## 1. Allgemeine Informationen 
 
@@ -92,7 +102,9 @@
 
 - Über den Menüpunkt "Import" kopiert man die angelegten Klassenstrukturen, im YAML Format, mit den dazugehörigen Attributen aus OTRS in den Connector. Defaultmässig werden hier die Standard Strukturen aus OTRS mitgeliefert. Werden die Klassendefinitionen in OTRS geändert oder neu angelegt, können diese per Copy & Paste hier eingefügt werden.
 - Der Klassenname steht, nach dem Speichern der Struktur, im Schritt 1 für das Mapping der Objekttypen zur Verfügung. Nach dem Speichern einer Struktur werden auf der rechten Seite die verfügbaren Attribute angezeigt. Diese Attribute stehen im Schritt 3 für das Mapping der Attribute bereit.
-- Beispiele für Computer und Monitore sind als Textdokument vorhanden. (computer.yaml und monitor.yaml)
+- Beispiele für Computer und Monitore sind als Textdokument vorhanden. (```computer.yaml``` und ```monitor.yaml```)
+- **Achtung** Beim Speichern einer Änderung der Klassendefinition werden alle Zuordungen der Atribute (Schritt 3) zurückgesetzt.
+- Bitte hier unbedingt Screenshots der aktuellen Zuodnungen machen um diese wiederherzustellen.
 
 ![This is an image](/images/manual_import.png)
 
@@ -168,4 +180,18 @@
 ### 3.1 OTRS Monitor Klassendefinition 
 
 ```otrs_monitor.yaml```
+
+## 4. Update von Connector Version 1.8.x auf 1.9.x
+
+- Bei diesem Update ist es zwingend notwendig die OTRS Klassen auch in i-doit im YAML Format anzugeben.
+- Wird eine bestehende KLasse geändert gehen alle Zuodnungen der Attribute (Schritt 3) verloren.
+- Bitte hier unbedingt Screenshots der aktuellen Zuodnungen machen um diese wiederherzustellen.
+
+
+
+
+
+
+
+
 
