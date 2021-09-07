@@ -9,7 +9,7 @@
 * [2.3 User für die Synchronisation](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#23-user-fu%CC%88r-die-synchronisation)
 * [2.4 i-doit Installation & Konfiguration](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#24-i-doit-installation--konfiguration)
 * [2.5 Prüfen des Syncs auf OTRS Seite](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#25-pru%CC%88fen-des-syncs-auf-otrs-seite)
-* [3 Anlagen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#3-anlagen)
+* [3. Anlagen](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#3-anlagen)
 * [3.1 OTRS Computer Klassendefinition](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-computer-klassendefinition)
 * [3.2 OTRS Monitor Klassendefinition ](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#31-otrs-monitor-klassendefinition)
 * [4. Update von Connector Version 1.8.x auf 1.9.x](https://github.com/it-novum/i-doit-OTRS-Znuny-Connector#4-update-von-connector-version-18x-auf-19x)
@@ -171,7 +171,7 @@
 
 ![This is an image](/images/OTRS_History.png)
 
-## 3 Anlagen
+## 3. Anlagen
 
 ### 3.1 OTRS Computer Klassendefinition 
 
