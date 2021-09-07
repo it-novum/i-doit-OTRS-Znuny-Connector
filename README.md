@@ -103,7 +103,7 @@
 - Über den Menüpunkt "Import" kopiert man die angelegten Klassenstrukturen, im YAML Format, mit den dazugehörigen Attributen aus OTRS in den Connector. Defaultmässig werden hier die Standard Strukturen aus OTRS mitgeliefert. Werden die Klassendefinitionen in OTRS geändert oder neu angelegt, können diese per Copy & Paste hier eingefügt werden.
 - Der Klassenname steht, nach dem Speichern der Struktur, im Schritt 1 für das Mapping der Objekttypen zur Verfügung. Nach dem Speichern einer Struktur werden auf der rechten Seite die verfügbaren Attribute angezeigt. Diese Attribute stehen im Schritt 3 für das Mapping der Attribute bereit.
 - Beispiele für Computer und Monitore sind als Textdokument vorhanden. (```computer.yaml``` und ```monitor.yaml```)
-- **Achtung** Beim Speichern einer Änderung der Klassendefinition werden alle Zuordungen der Atribute (Schritt 3) zurückgesetzt.
+- **Hinweis** Beim Speichern einer Änderung der Klassendefinition werden alle Zuordungen der Atribute (Schritt 3) zurückgesetzt.
 - Bitte hier unbedingt Screenshots der aktuellen Zuodnungen machen um diese wiederherzustellen.
 
 ![This is an image](/images/manual_import.png)
@@ -183,9 +183,9 @@
 
 ## 4. Update von Connector Version 1.8.x auf 1.9.x
 
-- Bei diesem Update ist es zwingend notwendig die OTRS Klassen auch in i-doit im YAML Format anzugeben.
-- Wird eine bestehende KLasse geändert gehen alle Zuodnungen der Attribute (Schritt 3) verloren.
-- Bitte hier unbedingt Screenshots der aktuellen Zuodnungen machen um diese wiederherzustellen.
+- Bei diesem Update ist es zwingend notwendig die OTRS Klassen, auch in i-doit, im YAML Format anzugeben.
+- Wird eine bestehende Klasse geändert, gehen alle Zuordnungen der Attribute (Schritt 3) verloren.
+- Bitte hier **unbedingt** Screenshots der aktuellen Zuodnungen machen, um diese wiederherzustellen.
 
 
 
