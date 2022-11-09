@@ -187,7 +187,7 @@
 - Wird eine bestehende Klasse geändert, gehen alle Zuordnungen der Attribute (Schritt 3) verloren.
 - Bitte hier **unbedingt** Screenshots der aktuellen Zuodnungen machen, um diese wiederherzustellen.
 
-## 5. Neuer Connector wird zur Zeit Entwickelt
+## 5. Neuer Connector ist zur Zeit in der Entwicklung
 
 
 
